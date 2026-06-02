@@ -1,5 +1,7 @@
 # Batch Global Optimizer for HYDRUS (DE + L-BFGS-B)
 
+**Personal Project, use with caution**
+
 An automated, stateful, and physics-guided global optimization framework for HYDRUS-2D solute transport. This script wraps the HYDRUS computational engine (`H2D_Calc64.exe`) to perform global inverse parameter estimation using a Hybrid Differential Evolution (DE) and local L-BFGS-B search algorithm.
 
 It is specifically engineered to resolve the severe parameter identifiability and local minima issues (such as the "Zero-Concentration Flatline") encountered when fitting highly non-linear, kinetically limited solute breakthrough curves (BTCs) in novel composite materials (e.g., hydrogels, porous media with reactive surfaces).
