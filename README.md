@@ -84,13 +84,13 @@ MODEL_CONFIGS = {
 
 ### 3.2 Dynamic Batch Processing (`batch_runs.csv`)
 
-If you are running different experiments, physical parameters (like Bulk Density or Porosity) change per column. You must define these in the `batch_runs.csv` file.
+If you are running different experiments, physical parameters (like Bulk Density or Porosity) change per column. You must define these in the `batch_runs.csv` file. For example
 
 |   |   |   |   |   |   |
 |---|---|---|---|---|---|
 |**filename**|**Bulk.d**|**Ths**|**Hyd_Ks**|**DisperL**|**Beta**|
-|observed0.csv|1.65|0.38|0.93|2.7|0.5|
-|observed1.csv|1.50|0.33|0.48|2.5|0.7|
+|observed0.csv|1.8|0.45|1|4|0.5|
+|observed1.csv|1.40|0.33|0.6|1|0.7|
 
 - **How Overrides Work:** If a header in `batch_runs.csv` matches an item in `VALID_PARAMS` _and_ that parameter is marked `active=False` in your script, the script intercepts it and dynamically patches it in `Selector.in` exclusively for that run.
 
