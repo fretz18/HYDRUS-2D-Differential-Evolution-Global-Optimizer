@@ -22,7 +22,7 @@ It is specifically engineered to resolve the severe parameter identifiability an
     
 4. **Stateful Session Execution**
     
-    If a laptop or server crashes mid-batch, the script does not lose progress. On restart, it reads `optim_master_results.csv`, identifies completed runs, skips them, and appends new results to the same file without column corruption.
+    If a PC or server crashes mid-batch, the script does not lose progress. On restart, it reads `optim_master_results.csv`, identifies completed runs, skips them, and appends new results to the same file without column corruption.
     
 5. **Standard Error via Delta Method**
     
